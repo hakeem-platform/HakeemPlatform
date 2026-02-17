@@ -3,10 +3,11 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { Menu, X, Moon, Sun, GraduationCap } from 'lucide-react'
+import { Menu, X, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
+import { Logo } from '@/components/logo'
 
 const navLinks = [
   { href: '/', label: 'الرئيسية' },
@@ -41,13 +42,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8" aria-label="القائمة الرئيسية">
         <Link href="/" className="flex items-center gap-3 group" aria-label="منصة الحكيم - الصفحة الرئيسية">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
-            <GraduationCap className="h-5 w-5 text-primary" />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-lg font-bold text-foreground leading-tight">الحكيم</span>
-            <span className="text-xs text-muted-foreground leading-tight">للخدمات الطلابية</span>
-          </div>
+          <Logo size="md" />
         </Link>
 
         {/* Desktop Nav */}
