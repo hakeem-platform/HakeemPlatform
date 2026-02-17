@@ -26,14 +26,8 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10 border border-primary/20">
-                <GraduationCap className="h-5 w-5 text-primary" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-foreground leading-tight">الحكيم</span>
-                <span className="text-xs text-muted-foreground leading-tight">للخدمات الطلابية</span>
-              </div>
+            <div className="mb-4">
+              <Logo size="md" />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               منصة متخصصة في تقديم الخدمات الطلابية والأكاديمية لجميع الجامعات السعودية بجودة عالية وسرية تامة.

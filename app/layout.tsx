@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     siteName: 'منصة الحكيم للخدمات الطلابية',
     title: 'منصة الحكيم للخدمات الطلابية | أبحاث ومشاريع جامعية احترافية',
     description: 'متخصصون في إعداد الأبحاث الأكاديمية والمشاريع الجامعية والعروض التقديمية لجميع الجامعات السعودية. نلتزم بالجودة والدقة والسرية التامة.',
+    images: [{ url: '/logo-light.jpg', width: 1024, height: 1024, alt: 'منصة الحكيم للخدمات الطلابية' }],
   },
   twitter: {
     card: 'summary_large_image',
@@ -62,19 +63,17 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
+        url: '/icon-light-32x32.jpg',
         media: '(prefers-color-scheme: light)',
+        type: 'image/jpeg',
       },
       {
-        url: '/icon-dark-32x32.png',
+        url: '/icon-dark-32x32.jpg',
         media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        type: 'image/jpeg',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/logo-light.jpg',
   },
 }
 

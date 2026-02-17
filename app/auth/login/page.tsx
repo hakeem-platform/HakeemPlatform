@@ -8,7 +8,8 @@ import { Label } from '@/components/ui/label'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-import { GraduationCap, Loader2, ArrowRight } from 'lucide-react'
+import { Loader2, ArrowRight } from 'lucide-react'
+import { Logo } from '@/components/logo'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -42,10 +43,8 @@ export default function LoginPage() {
       <div className="w-full max-w-sm">
         <div className="flex flex-col gap-6">
           <div className="flex justify-center mb-4">
-            <Link href="/" className="flex items-center gap-3" aria-label="العودة للرئيسية">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 border border-primary/20">
-                <GraduationCap className="h-6 w-6 text-primary" />
-              </div>
+            <Link href="/" aria-label="العودة للرئيسية">
+              <Logo size="lg" showText={false} />
             </Link>
           </div>
           <Card className="rounded-2xl">

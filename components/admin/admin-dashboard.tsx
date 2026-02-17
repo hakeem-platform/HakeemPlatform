@@ -4,9 +4,10 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
-import { GraduationCap, Plus, LogOut, Moon, Sun, LayoutDashboard } from 'lucide-react'
+import { Plus, LogOut, Moon, Sun, LayoutDashboard } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
+import { Logo } from '@/components/logo'
 import { WorksList } from './works-list'
 import { WorkFormDialog } from './work-form-dialog'
 
@@ -65,9 +66,7 @@ export function AdminDashboard({ initialWorks }: { initialWorks: Work[] }) {
         <div className="mx-auto max-w-7xl flex items-center justify-between px-4 py-4 lg:px-8">
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary/10 border border-primary/20">
-                <GraduationCap className="h-4 w-4 text-primary" />
-              </div>
+              <Logo size="sm" showText={false} />
             </Link>
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <LayoutDashboard className="h-4 w-4" />
