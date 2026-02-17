@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import { GraduationCap, Phone, Globe, ArrowUp } from 'lucide-react'
+import { Phone, Globe, ArrowUp } from 'lucide-react'
+import { Logo } from '@/components/logo'
 
 const quickLinks = [
   { href: '/', label: 'الرئيسية' },
