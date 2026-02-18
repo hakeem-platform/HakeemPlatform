@@ -58,7 +58,7 @@ export function Logo({ size = 'md', showText = true, className }: LogoProps) {
       </div>
       {showText && (
         <div className="flex flex-col">
-          <span className={cn(s.text, 'font-bold text-foreground leading-tight')}>الحكيم</span>
+          <span className={cn(s.text, 'font-bold text-foreground leading-tight')}>منصة الحكيم</span>
           <span className={cn(s.sub, 'text-muted-foreground leading-tight')}>للخدمات الطلابية</span>
         </div>
       )}
